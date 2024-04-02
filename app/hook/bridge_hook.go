@@ -99,3 +99,11 @@ func (h BridgeHook) BridgeProposerUpdated(
 ) error {
 	return nil
 }
+
+func (h BridgeHook) BridgeBatchInfoUpdated(
+	ctx context.Context,
+	bridgeId uint64,
+	bridgeConfig ophosttypes.BridgeConfig,
+) error {
+	return nil
+}
