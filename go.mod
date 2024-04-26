@@ -39,7 +39,7 @@ require (
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0
 	github.com/hashicorp/go-metrics v0.5.3
 	github.com/initia-labs/OPinit v0.2.5
-	github.com/initia-labs/indexer v0.1.0-beta.20.0.20240426025807-558af3d602a1
+	github.com/initia-labs/indexer v0.1.0-beta.20.0.20240426060914-d9b5fc268396
 	// we also need to update `LIBMOVEVM_VERSION` of images/private/Dockerfile#5
 	github.com/initia-labs/movevm v0.2.6
 	github.com/noble-assets/forwarding v0.0.0-20240416085758-ed8e9efaf69a

@@ -736,8 +736,8 @@ github.com/initia-labs/cosmos-sdk v0.0.0-20240425031032-6bc18cf6e67d h1:8OCL+PBo
 github.com/initia-labs/cosmos-sdk v0.0.0-20240425031032-6bc18cf6e67d/go.mod h1:lVkRY6cdMJ0fG3gp8y4hFrsKZqF4z7y0M2UXFb9Yt40=
 github.com/initia-labs/iavl v0.0.0-20240415085037-7e81233cdd9e h1:1gkMWkAgVhYFhEv7K4tX+8uJJLdiTKlQhl5+wGaxdMg=
 github.com/initia-labs/iavl v0.0.0-20240415085037-7e81233cdd9e/go.mod h1:jLeUvm6bGT1YutCaL2fIar/8vGUE8cPZvh/gXEWDaDM=
-github.com/initia-labs/indexer v0.1.0-beta.20.0.20240426025807-558af3d602a1 h1:Ew4C8nqGuOYcqw+2nDX69pLVz/7z5mvBn81ppBl8GlM=
-github.com/initia-labs/indexer v0.1.0-beta.20.0.20240426025807-558af3d602a1/go.mod h1:xzqAy3BE16KDwOHSyPWLni3bZZTxUY+qX1zzNDSsT8s=
+github.com/initia-labs/indexer v0.1.0-beta.20.0.20240426060914-d9b5fc268396 h1:SfLJ9FJtmxd8DRhnS5sLEBYNALGrV4mndrCjy8K1hXE=
+github.com/initia-labs/indexer v0.1.0-beta.20.0.20240426060914-d9b5fc268396/go.mod h1:xzqAy3BE16KDwOHSyPWLni3bZZTxUY+qX1zzNDSsT8s=
 github.com/initia-labs/movevm v0.2.6 h1:dhXGeS4cwCA+bnOPv6xWfDX0LdVD+7O5ZV/8+GeQqmM=
 github.com/initia-labs/movevm v0.2.6/go.mod h1:6MxR4GP5zH3JUc1IMgfqAe1e483mZVS7fshPknZPJ30=
 github.com/initia-labs/slinky v0.0.0-20240418051646-d45167cc66b1 h1:7mXLhI/X+GLdAYNmzXE5CIvTuOgETUMB7tR6VHvX/tY=
