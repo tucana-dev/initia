@@ -38,11 +38,11 @@ require (
 	github.com/gorilla/mux v1.8.1
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0
 	github.com/hashicorp/go-metrics v0.5.3
-	github.com/initia-labs/OPinit v0.2.5
-	github.com/initia-labs/indexer v0.1.0-beta.20.0.20240426025807-558af3d602a1
+	github.com/initia-labs/OPinit v0.2.6
+	github.com/initia-labs/indexer v0.2.0
 	// we also need to update `LIBMOVEVM_VERSION` of images/private/Dockerfile#5
-	github.com/initia-labs/movevm v0.2.6
-	github.com/initia-labs/xp-indexer v0.0.0-20240426024331-0f16b7a8dfa9
+	github.com/initia-labs/movevm v0.2.7
+	github.com/initia-labs/xp-indexer v0.0.0-20240429020635-4eeb22f2a02c
 	github.com/noble-assets/forwarding v0.0.0-20240416085758-ed8e9efaf69a
 	github.com/pelletier/go-toml v1.9.5
 	github.com/pkg/errors v0.9.1
@@ -153,7 +153,7 @@ require (
 	github.com/iancoleman/strcase v0.3.0 // indirect
 	github.com/improbable-eng/grpc-web v0.15.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
-	github.com/initia-labs/OPinit/api v0.2.5 // indirect
+	github.com/initia-labs/OPinit/api v0.2.6 // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect
 	github.com/jackc/pgservicefile v0.0.0-20221227161230-091c0ba34f0a // indirect
 	github.com/jackc/pgx/v5 v5.4.3 // indirect
