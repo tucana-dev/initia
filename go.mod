@@ -42,7 +42,7 @@ require (
 	github.com/initia-labs/indexer v0.2.0
 	// we also need to update `LIBMOVEVM_VERSION` of images/private/Dockerfile#5
 	github.com/initia-labs/movevm v0.2.7
-	github.com/initia-labs/xp-indexer v0.0.0-20240429020635-4eeb22f2a02c
+	github.com/initia-labs/xp-indexer v0.0.0-20240430054227-f40ac14d9ae6
 	github.com/noble-assets/forwarding v0.0.0-20240416085758-ed8e9efaf69a
 	github.com/pelletier/go-toml v1.9.5
 	github.com/pkg/errors v0.9.1
