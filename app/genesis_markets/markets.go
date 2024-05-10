@@ -336,50 +336,6 @@ const GenesisMarkets = `[
 	{
 	  "ticker": {
 		"currency_pair": {
-		  "Base": "NTRN",
-		  "Quote": "USD"
-		},
-		"decimals": 8,
-		"min_provider_count": 2
-	  },
-	  "provider_configs": [
-		{
-		  "name": "binance_api",
-		  "off_chain_ticker": "NTRNUSDT",
-		  "normalize_by_pair": {
-			"Base": "USDT",
-			"Quote": "USD"
-		  }
-		},
-		{
-		  "name": "gate_ws",
-		  "off_chain_ticker": "NTRN_USDT",
-		  "normalize_by_pair": {
-			"Base": "USDT",
-			"Quote": "USD"
-		  }
-		},
-		{
-		  "name": "kucoin_ws",
-		  "off_chain_ticker": "NTRN-USDT",
-		  "normalize_by_pair": {
-			"Base": "USDT",
-			"Quote": "USD"
-		  }
-		},
-		{
-		  "name": "okx_ws",
-		  "off_chain_ticker": "NTRN-USDT",
-		  "normalize_by_pair": {
-			"Base": "USDT",
-			"Quote": "USD"
-		  }
-		}
-	  ]
-	},
-	{
-	  "ticker": {
-		"currency_pair": {
 		  "Base": "PEPE",
 		  "Quote": "USD"
 		},
