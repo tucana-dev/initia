@@ -58,8 +58,7 @@ func preSetupIndexer(svrCtx *server.Context, clientCtx client.Context, ctx conte
 }
 
 var startCmdOptions = server.StartCmdOptions{
-	DBOpener:  nil,
-	PreSetup:  preSetupIndexer,
-	PostSetup: postSetup,
-	AddFlags:  addIndexFlag,
+	DBOpener: nil,
+	PreSetup: preSetupIndexer,
+	AddFlags: addIndexFlag,
 }

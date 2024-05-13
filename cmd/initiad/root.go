@@ -152,7 +152,7 @@ func initRootCmd(rootCmd *cobra.Command, encodingConfig params.EncodingConfig, b
 		snapshot.Cmd(a.newApp),
 	)
 
-	server.AddCommands(
+	server.AddCommandsWithOptions(
 		rootCmd,
 		initiaapp.DefaultNodeHome,
 		a.newApp,
