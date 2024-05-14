@@ -738,8 +738,8 @@ github.com/initia-labs/cosmos-sdk v0.0.0-20240425031032-6bc18cf6e67d h1:8OCL+PBo
 github.com/initia-labs/cosmos-sdk v0.0.0-20240425031032-6bc18cf6e67d/go.mod h1:lVkRY6cdMJ0fG3gp8y4hFrsKZqF4z7y0M2UXFb9Yt40=
 github.com/initia-labs/iavl v0.0.0-20240415085037-7e81233cdd9e h1:1gkMWkAgVhYFhEv7K4tX+8uJJLdiTKlQhl5+wGaxdMg=
 github.com/initia-labs/iavl v0.0.0-20240415085037-7e81233cdd9e/go.mod h1:jLeUvm6bGT1YutCaL2fIar/8vGUE8cPZvh/gXEWDaDM=
-github.com/initia-labs/indexer v0.2.3 h1:2vCkIs9y8w9U8qXTlNtbC8ipdEUH4ViG+aOMsz1vZfw=
-github.com/initia-labs/indexer v0.2.3/go.mod h1:kdFmxLx3ZwjIhNCacM7tWLBkhe2Q7E/wFPxFOHvnqUs=
+github.com/initia-labs/indexer v0.2.4-0.20240514121527-a91b47473164 h1:G585XpvvXhnJ3vSsKYtco5Q1uTM4RMIKO/NBAuUHKUk=
+github.com/initia-labs/indexer v0.2.4-0.20240514121527-a91b47473164/go.mod h1:kdFmxLx3ZwjIhNCacM7tWLBkhe2Q7E/wFPxFOHvnqUs=
 github.com/initia-labs/movevm v0.2.8 h1:4UCUOrYSRQbfBLHEryqG2U1i9Qme/ms14HoVhcpmUNI=
 github.com/initia-labs/movevm v0.2.8/go.mod h1:6MxR4GP5zH3JUc1IMgfqAe1e483mZVS7fshPknZPJ30=
 github.com/jackc/pgpassfile v1.0.0 h1:/6Hmqy13Ss2zCq62VdNG8tM1wchn8zjSGOBJ6icpsIM=
