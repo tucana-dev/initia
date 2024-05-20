@@ -744,8 +744,8 @@ github.com/initia-labs/indexer v0.2.3 h1:2vCkIs9y8w9U8qXTlNtbC8ipdEUH4ViG+aOMsz1
 github.com/initia-labs/indexer v0.2.3/go.mod h1:kdFmxLx3ZwjIhNCacM7tWLBkhe2Q7E/wFPxFOHvnqUs=
 github.com/initia-labs/movevm v0.2.8 h1:4UCUOrYSRQbfBLHEryqG2U1i9Qme/ms14HoVhcpmUNI=
 github.com/initia-labs/movevm v0.2.8/go.mod h1:6MxR4GP5zH3JUc1IMgfqAe1e483mZVS7fshPknZPJ30=
-github.com/initia-labs/xp-indexer v0.0.0-20240519143033-f7b1442947cb h1:Q7iTfOesfdIlR5J5Gplmg3g65aQR/mUz8eMXvinOmpk=
-github.com/initia-labs/xp-indexer v0.0.0-20240519143033-f7b1442947cb/go.mod h1:MgqNr9ZXZQcp/orvzrlC+vfAdee3Z9/nVdRXLX/fXbI=
+github.com/initia-labs/xp-indexer v0.0.0-20240520090849-2b0e4e76185f h1:K/TROB/S2bqI+AyPaWEDjpNadjd5oB05Aa0ZK1AMwUc=
+github.com/initia-labs/xp-indexer v0.0.0-20240520090849-2b0e4e76185f/go.mod h1:MgqNr9ZXZQcp/orvzrlC+vfAdee3Z9/nVdRXLX/fXbI=
 github.com/jackc/pgpassfile v1.0.0 h1:/6Hmqy13Ss2zCq62VdNG8tM1wchn8zjSGOBJ6icpsIM=
 github.com/jackc/pgpassfile v1.0.0/go.mod h1:CEx0iS5ambNFdcRtxPj5JhEz+xB6uRky5eyVu/W2HEg=
 github.com/jackc/pgservicefile v0.0.0-20221227161230-091c0ba34f0a h1:bbPeKD0xmW/Y25WS6cokEszi5g+S0QxI/d45PkRi7Nk=
