@@ -217,6 +217,20 @@ func (k Keeper) executeEntryFunction(
 	// delegate gas metering to move vm
 	sdkCtx = sdkCtx.WithGasMeter(storetypes.NewInfiniteGasMeter())
 
+	k.Logger(ctx).Info("execute entry function 2",
+		"moduleAddr", moduleAddr.String(), "moduleName", moduleName, "functionName",
+		functionName, "isJson", isJSON)
+	fmt.Println("-------------type args begin------------------")
+	for _, v := range typeArgs {
+		fmt.Println(v)
+	}
+	fmt.Println("-------------type args end------------------")
+	fmt.Println("-------------json args begin------------------")
+	for _, v := range args {
+		fmt.Println(v)
+	}
+	fmt.Println("-------------json args end------------------")
+
 	// run vm
 	execRes, err := k.moveVM.ExecuteEntryFunction(
 		types.NewVMStore(sdkCtx, k.VMStore),
@@ -608,6 +622,20 @@ func (k Keeper) executeViewFunction(
 	if err != nil {
 		return vmtypes.ViewOutput{}, err
 	}
+
+	k.Logger(ctx).Info("execute view function 2",
+		"moduleAddr", moduleAddr.String(), "moduleName", moduleName, "functionName",
+		functionName, "isJson", isJSON)
+	fmt.Println("-------------type args begin------------------")
+	for _, v := range typeArgs {
+		fmt.Println(v)
+	}
+	fmt.Println("-------------type args end------------------")
+	fmt.Println("-------------json args begin------------------")
+	for _, v := range args {
+		fmt.Println(v)
+	}
+	fmt.Println("-------------json args end------------------")
 
 	executionCounter, err := k.ExecutionCounter.Next(ctx)
 	if err != nil {
