@@ -5,6 +5,7 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"errors"
+	"fmt"
 	"math"
 	"strings"
 	"unsafe"
@@ -142,6 +143,20 @@ func (k Keeper) ExecuteEntryFunctionJSON(
 		// use unsafe method for fast conversion
 		args[i] = unsafe.Slice(unsafe.StringData(jsonArg), len(jsonArg))
 	}
+
+	k.Logger(ctx).Info("execute entry function",
+		"moduleAddr", moduleAddr.String(), "moduleName", moduleName, "functionName",
+		functionName)
+	fmt.Println("-------------type args begin------------------")
+	for _, v := range typeArgs {
+		fmt.Println(v)
+	}
+	fmt.Println("-------------type args end------------------")
+	fmt.Println("-------------json args begin------------------")
+	for _, v := range jsonArgs {
+		fmt.Println(v)
+	}
+	fmt.Println("-------------json args end------------------")
 
 	return k.executeEntryFunction(
 		ctx,
@@ -547,6 +562,20 @@ func (k Keeper) ExecuteViewFunctionJSON(
 		// use unsafe method for fast conversion
 		args[i] = unsafe.Slice(unsafe.StringData(jsonArg), len(jsonArg))
 	}
+
+	k.Logger(ctx).Info("execute entry function",
+		"moduleAddr", moduleAddr.String(), "moduleName", moduleName, "functionName",
+		functionName)
+	fmt.Println("-------------type args begin------------------")
+	for _, v := range typeArgs {
+		fmt.Println(v)
+	}
+	fmt.Println("-------------type args end------------------")
+	fmt.Println("-------------json args begin------------------")
+	for _, v := range jsonArgs {
+		fmt.Println(v)
+	}
+	fmt.Println("-------------json args end------------------")
 
 	return k.executeViewFunction(
 		ctx,
