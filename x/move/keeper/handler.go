@@ -143,20 +143,19 @@ func (k Keeper) ExecuteEntryFunctionJSON(
 		// use unsafe method for fast conversion
 		args[i] = unsafe.Slice(unsafe.StringData(jsonArg), len(jsonArg))
 	}
-
-	k.Logger(ctx).Info("execute entry function",
-		"moduleAddr", moduleAddr.String(), "moduleName", moduleName, "functionName",
-		functionName)
-	fmt.Println("-------------type args begin------------------")
-	for _, v := range typeArgs {
-		fmt.Println(v)
+	err := k.executeEntryFunction(
+		ctx,
+		[]vmtypes.AccountAddress{sender},
+		moduleAddr,
+		moduleName,
+		functionName,
+		typeArgs,
+		args,
+		true,
+	)
+	if err != nil {
+		return err
 	}
-	fmt.Println("-------------type args end------------------")
-	fmt.Println("-------------json args begin------------------")
-	for _, v := range jsonArgs {
-		fmt.Println(v)
-	}
-	fmt.Println("-------------json args end------------------")
 
 	return k.executeEntryFunction(
 		ctx,
@@ -220,16 +219,13 @@ func (k Keeper) executeEntryFunction(
 	k.Logger(ctx).Info("execute entry function 2",
 		"moduleAddr", moduleAddr.String(), "moduleName", moduleName, "functionName",
 		functionName, "isJson", isJSON)
-	fmt.Println("-------------type args begin------------------")
+	fmt.Println("-------------type args begin & json args begin------------------")
 	for _, v := range typeArgs {
 		fmt.Println(v)
 	}
-	fmt.Println("-------------type args end------------------")
-	fmt.Println("-------------json args begin------------------")
 	for _, v := range args {
 		fmt.Println(v)
 	}
-	fmt.Println("-------------json args end------------------")
 
 	// run vm
 	execRes, err := k.moveVM.ExecuteEntryFunction(
@@ -577,20 +573,6 @@ func (k Keeper) ExecuteViewFunctionJSON(
 		args[i] = unsafe.Slice(unsafe.StringData(jsonArg), len(jsonArg))
 	}
 
-	k.Logger(ctx).Info("execute view function",
-		"moduleAddr", moduleAddr.String(), "moduleName", moduleName, "functionName",
-		functionName)
-	fmt.Println("-------------type args begin------------------")
-	for _, v := range typeArgs {
-		fmt.Println(v)
-	}
-	fmt.Println("-------------type args end------------------")
-	fmt.Println("-------------json args begin------------------")
-	for _, v := range jsonArgs {
-		fmt.Println(v)
-	}
-	fmt.Println("-------------json args end------------------")
-
 	return k.executeViewFunction(
 		ctx,
 		moduleAddr,
@@ -626,16 +608,13 @@ func (k Keeper) executeViewFunction(
 	k.Logger(ctx).Info("execute view function 2",
 		"moduleAddr", moduleAddr.String(), "moduleName", moduleName, "functionName",
 		functionName, "isJson", isJSON)
-	fmt.Println("-------------type args begin------------------")
+	fmt.Println("-------------type args begin & json args begin------------------")
 	for _, v := range typeArgs {
 		fmt.Println(v)
 	}
-	fmt.Println("-------------type args end------------------")
-	fmt.Println("-------------json args begin------------------")
 	for _, v := range args {
 		fmt.Println(v)
 	}
-	fmt.Println("-------------json args end------------------")
 
 	executionCounter, err := k.ExecutionCounter.Next(ctx)
 	if err != nil {
