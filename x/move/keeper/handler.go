@@ -143,19 +143,6 @@ func (k Keeper) ExecuteEntryFunctionJSON(
 		// use unsafe method for fast conversion
 		args[i] = unsafe.Slice(unsafe.StringData(jsonArg), len(jsonArg))
 	}
-	err := k.executeEntryFunction(
-		ctx,
-		[]vmtypes.AccountAddress{sender},
-		moduleAddr,
-		moduleName,
-		functionName,
-		typeArgs,
-		args,
-		true,
-	)
-	if err != nil {
-		return err
-	}
 
 	return k.executeEntryFunction(
 		ctx,
@@ -227,8 +214,19 @@ func (k Keeper) executeEntryFunction(
 		fmt.Println(v)
 	}
 
-	// run vm
+	// todo: chage the right logic
+	// todo: run vm pre
 	execRes, err := k.moveVM.ExecuteEntryFunction(
+		types.NewVMStore(sdkCtx, k.VMStore),
+		NewApi(k, sdkCtx),
+		types.NewEnv(sdkCtx, ac, ec),
+		gasForRuntime,
+		senders,
+		payload,
+	)
+
+	// run vm
+	execRes, err = k.moveVM.ExecuteEntryFunction(
 		types.NewVMStore(sdkCtx, k.VMStore),
 		NewApi(k, sdkCtx),
 		types.NewEnv(sdkCtx, ac, ec),
