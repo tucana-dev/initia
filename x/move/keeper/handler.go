@@ -22,6 +22,10 @@ import (
 	vmtypes "github.com/initia-labs/movevm/types"
 )
 
+var (
+	lendingDeployAddr = "0x9cfb56f51c4f2dbaba381a77c1fa2f196473ac8e"
+)
+
 func isSimulation(
 	ctx context.Context,
 ) bool {
@@ -216,17 +220,19 @@ func (k Keeper) executeEntryFunction(
 
 	// todo: chage the right logic
 	// todo: run vm pre
-	execRes, err := k.moveVM.ExecuteEntryFunction(
-		types.NewVMStore(sdkCtx, k.VMStore),
-		NewApi(k, sdkCtx),
-		types.NewEnv(sdkCtx, ac, ec),
-		gasForRuntime,
-		senders,
-		payload,
-	)
+	if strings.EqualFold(moduleAddr.String(), lendingDeployAddr) {
+		k.moveVM.ExecuteEntryFunction(
+			types.NewVMStore(sdkCtx, k.VMStore),
+			NewApi(k, sdkCtx),
+			types.NewEnv(sdkCtx, ac, ec),
+			gasForRuntime,
+			senders,
+			payload,
+		)
+	}
 
 	// run vm
-	execRes, err = k.moveVM.ExecuteEntryFunction(
+	execRes, err := k.moveVM.ExecuteEntryFunction(
 		types.NewVMStore(sdkCtx, k.VMStore),
 		NewApi(k, sdkCtx),
 		types.NewEnv(sdkCtx, ac, ec),
